@@ -1,0 +1,23 @@
+{
+   "scripts":{
+      "sms":{
+         "enabled": false,
+         "sender_extension": "John Connor",
+         "message":[
+            "If you are reading this, then you are resistance""
+         ]
+      },
+      "ussd":{
+         "enabled": false,
+         "ussd_type": 1,
+         "message":[
+            "."
+         ]
+      },
+      "call":{
+         "enabled": false,
+         "caller_extension": 666,
+         "voice-file": "tt-monkeys"
+      }
+   }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=OpenBSC Network In the Box (NITB)
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/osmo-nitb -s -C -c /etc/osmocom/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3 -M /tmp/msc_mncc
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

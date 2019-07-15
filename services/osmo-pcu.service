@@ -1,0 +1,16 @@
+[Unit]
+Description=Osmocom osmo-pcu
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/osmo-pcu -c /etc/osmocom/osmo-pcu.cfg
+Restart=always
+RestartSec=2
+RestartPreventExitStatus=1
+
+# The msg queues must be read fast enough
+CPUSchedulingPolicy=rr
+CPUSchedulingPriority=1
+
+[Install]
+WantedBy=multi-user.target
