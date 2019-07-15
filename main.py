@@ -187,10 +187,11 @@ if __name__ == "__main__" and check_root():
     time.sleep(3)
 
     while 1:
-        for user in db.get_new_users():
-            extension = user[5]
-            time.sleep(3)
-            user_interact.interact(config, extension)
+        if user_interaction:
+            for user in db.get_new_users():
+                extension = user[5]
+                time.sleep(3)
+                user_interact.interact(config, extension)
 
         monitor.update_monitor(db.get_subscribers())
         check_errors()

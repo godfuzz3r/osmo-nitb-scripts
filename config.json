@@ -4,18 +4,19 @@
          "enabled": false,
          "sender_extension": "John Connor",
          "message":[
-            "If you are reading this, then you are resistance""
+            "If you are reading this, then you are resistance"
          ]
       },
       "ussd":{
          "enabled": false,
          "ussd_type": 1,
          "message":[
-            "."
+            "Welcome to our l33t hax0r network.",
+            "If you are reading this, then you are true L33T 1337 H4xXx0r"
          ]
       },
       "call":{
-         "enabled": false,
+         "enabled": true,
          "caller_extension": 666,
          "voice-file": "tt-monkeys"
       }
